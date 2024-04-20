@@ -1,13 +1,40 @@
+/* Style for the main container */
 #main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 2px solid #333; 
+  padding: 20px; 
+  margin: 20px; 
+  width: 80%;  
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  background-color: #f0f8ff; 
 }
 
+/* Style for the GitHub container */
 #github-container {
   display: flex;
+  justify-content: space-around; /* Space out the list elements evenly */
+  width: 100%; 
 }
 
+/* Style for unordered lists */
 ul {
   list-style: none;
+  padding: 0; /* Remove default padding */
+  width: 50%; /* Set width to take up half of the parent container */
+  border: 1px solid #ddd; /* Light grey border for each list */
+  margin-top: 10px; /* Top margin for spacing between search form and list */
+  background-color: #e6f7ff; /* Lighter blue background for lists for contrast */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Subtle shadow for lists */
+}
+
+li {
+  padding: 10px; 
+  border-bottom: 1px solid #ccc; 
+}
+
+
+li:last-child {
+  border-bottom: none;
 }
